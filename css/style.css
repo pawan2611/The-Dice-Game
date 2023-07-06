@@ -1,0 +1,81 @@
+body {
+  background-color: lightgray;
+  font-family: "Raleway", sans-serif;
+}
+main {
+  text-align: center;
+}
+header {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2%;
+}
+.decision {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+.die {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+  margin-bottom: 1%;
+}
+@media (max-width: 767px) {
+  .die {
+    display: flex;
+    flex-direction: column;
+  }
+  #dice1 {
+    text-align: center !important;
+  }
+  #dice2 {
+    text-align: center !important;
+  }
+}
+#dice1 {
+  text-align: right;
+}
+#dice2 {
+  text-align: left;
+}
+#dice1img,
+#dice2img {
+  height: 15rem;
+  width: 15rem;
+  background-color: lightblue;
+  border-radius: 13%;
+  overflow: hidden;
+  margin: 2% auto;
+  /* animation: spin 0.8s linear 0s 1; */
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+.roll {
+  text-align: center;
+  border: none;
+  height: 3rem;
+  width: 10rem;
+  background-color: lightsalmon;
+  border: 2px solid maroon;
+  border-radius: 30px;
+  margin-bottom: 1%;
+}
+.roll:hover {
+  background-color: rgb(252, 137, 91);
+}
+footer {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 1rem;
+}
+#link-to-portfolio {
+  /* text-decoration: none; */
+  color: black;
+}
